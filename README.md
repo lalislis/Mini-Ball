@@ -2,7 +2,7 @@
 
 Miniball berbasis AR ini merupakan sebuah game dimana pemain bisa menggunakan waktu luangnya untuk bermain lempar bola. Terdapat mode utama yaitu Basketball dan mode tambahannya yaitu Canball. Basketball merupakan mode bermain basket seperti biasa, dimana player melempar bola ke dalam ring basket yang telah disediakan, sedangkan Canball merupakan mode bermain lempar bola (bola tenis), dimana target nya berupa kaleng yang tersusun berbentuk piramida.
 
-##Game Flow : 
+## Game Flow : 
 Game ini terbagi menjadi 3 bagian yaitu Choose Mode, Place Target, Melempar Bola.
 1. Choose Mode : Pada bagian ini, player diberikan dua pilihan game mode yaitu Basketball dan Canball. 
 	a. Untuk Basketball, player diarahkan untuk memasukkan bola ke dalam ring basket.. Setiap player berhasil memasukkan bola ke dalam ring basket, poin akan bertambah secara increment sebanyak 1 (dimulai dari 0 ya pak -mba pertamina). Jika player gagal memasukkan bola ke dalam ring basket,  maka game selesai dan poin akan menjadi high score (jika mendapatkan poin yang lebih tinggi dari high score sebelumnya).
