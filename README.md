@@ -16,6 +16,8 @@ Game ini terbagi menjadi 3 bagian yaitu Choose Mode, Place Target, Melempar Bola
 
 ## Anggota Kelompok
 
-1. M. Luthfi Taufiqurrahman - 140810190036
-2. Gregorius Evangelist - 140810190040
-3. Ihsanuddin Dwi P - 140810190048
+|No | Nama                     | NPM          |
+|---|-------==-----------------|--------------|
+| 1 | M. Luthfi Taufiqurrahman | 140810190036 |
+| 2 | Gregorius Evangelist     | 140810190040 |
+| 3 |Ihsanuddin Dwi P          | 140810190048 |
