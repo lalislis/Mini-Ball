@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 339942c9354171843b38f9f1fee777bf, type: 3}
+  m_Texture: {fileID: 2800000, guid: b6759eab3af531a4d8eb27de98faf8aa, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -381,11 +381,11 @@ RectTransform:
   m_Father: {fileID: 1113053558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 240.97311, y: 427.97375}
-  m_Pivot: {x: 0.5, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514717334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 62395c3cb30458b4ca4f044551a5397b, type: 3}
+  m_Texture: {fileID: 2800000, guid: 2450eb99fc602d24282b4b6d19696796, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6cbca37e88f12984fa9c65bdf418d124, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8d569359738b14847b51747e52d44654, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 339942c9354171843b38f9f1fee777bf, type: 3}
+  m_Texture: {fileID: 2800000, guid: b6759eab3af531a4d8eb27de98faf8aa, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -610,10 +610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -804,8 +804,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Choose Mode
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6cbca37e88f12984fa9c65bdf418d124, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8d569359738b14847b51747e52d44654, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1219,8 +1219,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Canball
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8fdc6940715f501439b76147a83df7d4, type: 3}
+  m_Texture: {fileID: 2800000, guid: 66cc11fd5c5205c46b1c061a8d0046c4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1489,8 +1489,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Basketball
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 63dfacc37f23fba4ab72efa73414a744, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
