@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 488b7b4395210114e8af8e27156a9db8, type: 3}
+  m_Texture: {fileID: 2800000, guid: 50452088847612b40bf1a00f2b54409c, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -313,8 +313,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Canball
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 339942c9354171843b38f9f1fee777bf, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8ceabca532d0ae847b09a9e5e7214ddc, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6cbca37e88f12984fa9c65bdf418d124, type: 3}
+  m_Texture: {fileID: 2800000, guid: a92663fe179dce74db5686c6df48776e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8fdc6940715f501439b76147a83df7d4, type: 3}
+  m_Texture: {fileID: 2800000, guid: b90c54161b6a67f4c9ade66afcc4392a, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 339942c9354171843b38f9f1fee777bf, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8ceabca532d0ae847b09a9e5e7214ddc, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6cbca37e88f12984fa9c65bdf418d124, type: 3}
+  m_Texture: {fileID: 2800000, guid: a92663fe179dce74db5686c6df48776e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1593,8 +1593,8 @@ MonoBehaviour:
 
     Mode'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1726,8 +1726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Basketball
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 69ec02d404f4a794da01bcd6239e2dc4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
