@@ -4,6 +4,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        // Plugin 3.6.0 -> Gradle 5.6.4+
+        // Used Gradle Version -> 7.4.2
         classpath 'com.android.tools.build:gradle:3.6.0'
     }
 }
