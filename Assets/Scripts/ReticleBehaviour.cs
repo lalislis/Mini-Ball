@@ -26,7 +26,7 @@ public class ReticleBehaviour : MonoBehaviour
 
         // Conduct Raycast
         var hits = new List<ARRaycastHit>();
-        DrivingSurfaceManager.RaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinBounds);
+        SurfaceManager.RaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinBounds);
 
         // Menentukan intersection point of interest dari antrian hits list.
         // Prioritas : locked plane yang ada di SurfaceManager.
@@ -36,7 +36,7 @@ public class ReticleBehaviour : MonoBehaviour
         ARRaycastHit? hit = null;
         if (hits.Length > 0) {
             // Jika belum memiliki locked plane...
-            var lockedPlane = DrivingSurfaceManager.LockedPlane;
+            var lockedPlane = SurfaceManager.LockedPlane;
             hit = lockedPlane == null
                 // ...gunakan first hit dari 'hits'.
                 ? hits[0]
@@ -46,7 +46,7 @@ public class ReticleBehaviour : MonoBehaviour
 
         // Jika hit memiliki result, GameObject di-transform (pindahkan) ke hit position
         if (hit.HasValue) {
-            CurrentPlane = DrivingSurfaceManager.PlaneManager.GetPlane(hit.Value.trackableId);
+            CurrentPlane = SurfaceManager.PlaneManager.GetPlane(hit.Value.trackableId);
             // Untuk memindahkan reticle ke lokasi hit
             transform.position = hit.Value.pose.position;
         }

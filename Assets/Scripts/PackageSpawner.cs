@@ -7,7 +7,7 @@ using UnityEngine.XR.ARFoundation;
 
 public class PackageSpawner : MonoBehaviour
 {
-    public DrivingSurfaceManager DrivingSurfaceManager;
+    public SurfaceManager SurfaceManager;
     public PackageBehaviour Package;
     public GameObject PackagePrefab;
 
@@ -47,7 +47,7 @@ public class PackageSpawner : MonoBehaviour
 
     private void Update()
     {
-        var lockedPlane = DrivingSurfaceManager.LockedPlane;
+        var lockedPlane = SurfaceManager.LockedPlane;
         if (lockedPlane != null)
         {
             if (Package == null)

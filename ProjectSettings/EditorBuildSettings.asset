@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 99c5a539543a4f445b97e2d304142fa4
-  - enabled: 1
-    path: Assets/Scenes/Choose Mode.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/Basketball.unity
-    guid: 257a874168021d74c8314d4ae4eb0453
-  - enabled: 1
-    path: Assets/Scenes/Canball.unity
-    guid: 86b98634bca9a1a4ab03fda3a0fba051
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7cebb556aa0d81a4e9787cdabff75922,
       type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: cb472a6b1c7f3734f918d820805dde62,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9a4e9c143d042804984e00d590ea9ec8,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3d33db228ffb111408b681adea5736cc,
       type: 2}
