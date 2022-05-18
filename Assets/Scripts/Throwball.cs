@@ -5,13 +5,12 @@ using UnityEngine;
 public class Throwball : MonoBehaviour
 {
     Vector2 mousePos, direction;
+    Vector3 ballPos;
     float timeStart, timeFinish, intervalTime;
 
-    [SerializeField] GameObject basketball;
-    Vector3 ballPos;
-
-    [SerializeField] float addForceXY = 1f;
-    [SerializeField] float addForceZ = 50f;
+    [SerializeField] GameObject ball;
+    [SerializeField] float addForceXY = 5f;
+    [SerializeField] float addForceZ = 250f;
 
     Rigidbody rb;
 
@@ -19,8 +18,6 @@ public class Throwball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
-
-        gameObject.name = "Basketball";
         ballPos = gameObject.transform.position;
     }
 
@@ -49,6 +46,6 @@ public class Throwball : MonoBehaviour
     IEnumerator SpawnBall()
     {
         yield return new WaitForSeconds(3);
-        Instantiate(basketball, ballPos, Quaternion.identity);
+        Instantiate(ball, ballPos, Quaternion.identity);
     }
 }

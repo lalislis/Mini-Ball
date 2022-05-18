@@ -1869,31 +1869,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8205417687171830106, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
-        type: 3}
-      propertyPath: addForceXY
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205417687171830106, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
-        type: 3}
-      propertyPath: basketball
-      value: 
-      objectReference: {fileID: 8205417687171830105, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
-        type: 3}
     - target: {fileID: 8205417688299523195, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8205417688299523195, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8205417688299523195, guid: 9344a9805b00c5f4cb38639bd39d7bbd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9344a9805b00c5f4cb38639bd39d7bbd, type: 3}

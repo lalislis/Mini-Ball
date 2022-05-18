@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
-public class CountGoal : MonoBehaviour
+public class BasketMechanic : MonoBehaviour
 {
     [SerializeField] TMP_Text scoreText;
     private int score = 0;

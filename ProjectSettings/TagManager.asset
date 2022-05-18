@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Goal
   - Ball
+  - Kaleng
   layers:
   - Default
   - TransparentFX
