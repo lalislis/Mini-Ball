@@ -28,14 +28,12 @@ public class Throwball : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Press");
             timeStart = Time.time;
             mousePos = Input.mousePosition;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("Release");
             intervalTime = (Time.time) - timeStart;
             direction = (Vector2) Input.mousePosition - mousePos;
 
