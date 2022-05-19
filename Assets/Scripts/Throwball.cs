@@ -38,7 +38,7 @@ public class Throwball : MonoBehaviour
             rb.AddForce(-direction.x * addForceXY, -direction.y * addForceXY, addForceZ / intervalTime);
 
             StartCoroutine(SpawnBall());
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 10f);
         }
     }
 

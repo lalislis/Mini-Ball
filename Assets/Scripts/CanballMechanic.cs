@@ -83,10 +83,10 @@ public class CanballMechanic : MonoBehaviour
 
     void setHighScore()
     {
-        int highScore = PlayerPrefs.GetInt("highscore");
+        int highScore = PlayerPrefs.GetInt("highscore_canball");
         if (highScore < score)
         {
-            PlayerPrefs.SetInt("highscore", score);
+            PlayerPrefs.SetInt("highscore_canball", score);
             highScore = score;
         }
 
