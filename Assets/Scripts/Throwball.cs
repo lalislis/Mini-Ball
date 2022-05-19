@@ -6,7 +6,7 @@ public class Throwball : MonoBehaviour
 {
     Vector2 mousePos, direction;
     Vector3 ballPos;
-    float timeStart, timeFinish, intervalTime;
+    float timeStart, intervalTime;
 
     [SerializeField] GameObject ball;
     [SerializeField] float addForceXY = 5f;
@@ -37,13 +37,12 @@ public class Throwball : MonoBehaviour
             rb.isKinematic = false;
             rb.AddForce(-direction.x * addForceXY, -direction.y * addForceXY, addForceZ / intervalTime);
 
-            Destroy(gameObject, 5f);
-
             StartCoroutine(SpawnBall());
+            Destroy(gameObject, 5f);
         }
     }
 
-    IEnumerator SpawnBall()
+    public IEnumerator SpawnBall()
     {
         yield return new WaitForSeconds(3);
         Instantiate(ball, ballPos, Quaternion.identity);
