@@ -2421,7 +2421,7 @@ MonoBehaviour:
     type: 3}
   piramid: {fileID: 993221851}
   maxUnit: 10
-  timerInSeconds: 60
+  timerInSeconds: 5
   gameOverUI: {fileID: 731569780}
   lastScoreText: {fileID: 193728971}
   highScoreText: {fileID: 1616896099}
@@ -2721,6 +2721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 662984606}
+  gameOverUI: {fileID: 731569780}
+  changeScene: {fileID: 1863519419}
 --- !u!4 &1459009276
 Transform:
   m_ObjectHideFlags: 0

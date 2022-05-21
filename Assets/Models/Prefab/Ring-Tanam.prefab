@@ -1051,8 +1051,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5458621810370503352}
-  - component: {fileID: 5458621810370503353}
   - component: {fileID: 364993489014783600}
+  - component: {fileID: 7837381653466975233}
   m_Layer: 0
   m_Name: Hitpoint
   m_TagString: Goal
@@ -1068,25 +1068,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5458621810370503359}
   m_LocalRotation: {x: 0.00000008940696, y: -0, z: -0.7247793, w: 0.68898124}
-  m_LocalPosition: {x: -0.726, y: -1.596, z: 0.001}
+  m_LocalPosition: {x: -0.696, y: -1.149, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5497297420385915478}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -92.901}
---- !u!135 &5458621810370503353
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5458621810370503359}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.35
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &364993489014783600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,6 +1087,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+--- !u!65 &7837381653466975233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5458621810370503359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.58, z: 0.76}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5512926016080456512
 GameObject:
   m_ObjectHideFlags: 0

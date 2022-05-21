@@ -2229,6 +2229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 294650223}
+  gameOverUI: {fileID: 1128539982}
+  changeScene: {fileID: 1863519419}
 --- !u!4 &1311504739
 Transform:
   m_ObjectHideFlags: 0
