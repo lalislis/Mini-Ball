@@ -7,6 +7,7 @@ public class Throwball : MonoBehaviour
     Vector2 mousePos, direction;
     Vector3 ballPos;
     float timeStart, intervalTime;
+    bool isThrowed = false;
 
     [SerializeField] GameObject ball;
     [SerializeField] float addForceXY = 5f;
@@ -23,6 +24,8 @@ public class Throwball : MonoBehaviour
 
     void Update()
     {
+        if (isThrowed) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             timeStart = Time.time;
@@ -31,14 +34,16 @@ public class Throwball : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
+            isThrowed = true;
             intervalTime = (Time.time) - timeStart;
             direction = (Vector2) Input.mousePosition - mousePos;
 
             rb.isKinematic = false;
+            Debug.Log(-direction.x + " " + -direction.y + " " + intervalTime);
             rb.AddForce(-direction.x * addForceXY, -direction.y * addForceXY, addForceZ / intervalTime);
 
             StartCoroutine(SpawnBall());
-            Destroy(gameObject, 10f);
+            Destroy(gameObject, 5f);
         }
     }
 

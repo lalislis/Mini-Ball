@@ -59,7 +59,6 @@ public class CanballMechanic : MonoBehaviour
 
     void generateTarget()
     {
-        Debug.Log(score % maxUnit);
         if (score % maxUnit == 0)
         {
             destroyPiramid();
