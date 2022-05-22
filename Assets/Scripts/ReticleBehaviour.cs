@@ -35,15 +35,15 @@ public class ReticleBehaviour : MonoBehaviour
         // Add pada akhir Update()
         CurrentPlane = null;
         ARRaycastHit? hit = null;
-        //if (hits.Length > 0) {
-        //    // Jika belum memiliki locked plane...
-        //    var lockedPlane = SurfaceManager.LockedPlane;
-        //    hit = lockedPlane == null
-        //        // ...gunakan first hit dari 'hits'.
-        //        ? hits[0]
-        //        // Atau gunakan locked plane jika sudah ada.
-        //        : hits.SingleOrDefault(x => x.trackableId == lockedPlane.trackableId);
-        //}
+        if (hits.Count > 0) {
+        // Jika belum memiliki locked plane...
+            var lockedPlane = SurfaceManager.LockedPlane;
+            hit = lockedPlane == null
+            // ...gunakan first hit dari 'hits'.
+                ? hits[0]
+                // Atau gunakan locked plane jika sudah ada.
+                : hits.SingleOrDefault(x => x.trackableId == lockedPlane.trackableId);
+        }
 
         // Jika hit memiliki result, GameObject di-transform (pindahkan) ke hit position
         if (hit.HasValue) {
