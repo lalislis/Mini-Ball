@@ -2,26 +2,26 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
-// Spawn BallBehaviour setiap kali plane di tap
+// Spawn TargetBehaviour setiap kali plane di tap
 // Masih placeholder dari dokumentasi, script mau dimodifikasi lagi
 
-public class BallManager : MonoBehaviour
+public class TargetManager : MonoBehaviour
 {
-    public GameObject BallPrefab;
+    public GameObject TargetPrefab;
     public ReticleBehaviour Reticle;
     public SurfaceManager SurfaceManager;
 
-    public BallBehaviour Ball;
+    public TargetBehaviour Target;
 
     private void Update()
     {
-        if (Ball == null && WasTapped() && Reticle.CurrentPlane != null)
+        if (Target == null && WasTapped() && Reticle.CurrentPlane != null)
         {
-            // Spawn Ball di Reticle
-            var obj = GameObject.Instantiate(BallPrefab);
-            Ball = obj.GetComponent<BallBehaviour>();
-            Ball.Reticle = Reticle;
-            Ball.transform.position = Reticle.transform.position;
+            // Spawn Target di Reticle
+            var obj = GameObject.Instantiate(TargetPrefab);
+            Target = obj.GetComponent<TargetBehaviour>();
+            Target.Reticle = Reticle;
+            Target.transform.position = Reticle.transform.position;
             SurfaceManager.LockPlane(Reticle.CurrentPlane);
         }    
     }

@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-// Ball akan track reticle dan collide dengan "PackageBehavior".
+// Target akan track reticle
 // Masih placeholder dari dokumentasi, script mau dimodifikasi lagi
 
-public class BallBehaviour : MonoBehaviour
+public class TargetBehaviour : MonoBehaviour
 {
     public ReticleBehaviour Reticle;
     public float Speed = 1.2f;
