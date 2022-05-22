@@ -2322,7 +2322,7 @@ GameObject:
   - component: {fileID: 1117031937}
   - component: {fileID: 1117031941}
   m_Layer: 0
-  m_Name: Destroy Target
+  m_Name: Gameplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2421,7 +2421,7 @@ MonoBehaviour:
     type: 3}
   piramid: {fileID: 993221851}
   maxUnit: 10
-  timerInSeconds: 5
+  timerInSeconds: 15
   gameOverUI: {fileID: 731569780}
   lastScoreText: {fileID: 193728971}
   highScoreText: {fileID: 1616896099}
