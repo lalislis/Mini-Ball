@@ -38,6 +38,7 @@ public class HandleGameOver : MonoBehaviour
         lastScoreText.text = lastScore.ToString();
         setHighScore(lastScore);
 
+        Time.timeScale = 0f;
         gameOverUI.SetActive(true);
     }
 

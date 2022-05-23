@@ -8,9 +8,12 @@ public class BasketGoal : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     private int score = 0;
 
+    AudioSource pointSound;
+
     void Start()
     {
         scoreText.text = score.ToString();
+        pointSound = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +26,11 @@ public class BasketGoal : MonoBehaviour
 
     private void updateScore()
     {
+        if (pointSound != null)
+        {
+            pointSound.Play();
+        }
+
         score = score + 1;
         scoreText.text = score.ToString();
     }

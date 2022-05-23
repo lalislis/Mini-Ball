@@ -11,15 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Choose Mode.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Basketball.unity
     guid: 71d11fcb09e4986459846e2db9044dc5
+  - enabled: 1
+    path: Assets/Scenes/Canball.unity
+    guid: 303a9dbe3bd198c4698c533954e095d6
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7cebb556aa0d81a4e9787cdabff75922,
       type: 2}

@@ -14,13 +14,19 @@ public class CanballMechanic : MonoBehaviour
     [SerializeField] GameObject gameOverUI;
     [SerializeField] TMP_Text lastScoreText;
     [SerializeField] TMP_Text highScoreText;
+    [SerializeField] AudioSource timerSound;
+    [SerializeField] int timerSoundInSeconds = 5;
 
     Vector3 piramidPos;
+    AudioSource pointSound;
     private int score = 0;
     private float lockTimer;
+    private bool isPlayingTimer = false;
 
     void Start()
     {
+        pointSound = GetComponent<AudioSource>();
+
         scoreText.text = score.ToString();
         timerText.text = timerInSeconds.ToString();
         piramidPos = piramid.position;
@@ -44,7 +50,13 @@ public class CanballMechanic : MonoBehaviour
         {
             lockTimer -= Time.deltaTime;
             timerText.text = ((int) lockTimer).ToString();
-        } 
+
+            if ((int) lockTimer <= timerSoundInSeconds && !isPlayingTimer)
+            {
+                isPlayingTimer = true;
+                if (timerSound != null) timerSound.Play();
+            }
+        }
         else
         {
             gameOver();
@@ -53,6 +65,7 @@ public class CanballMechanic : MonoBehaviour
 
     void updateScore()
     {
+        if (pointSound != null) pointSound.Play();
         score = score + 1;
         scoreText.text = score.ToString();
     }
@@ -77,7 +90,9 @@ public class CanballMechanic : MonoBehaviour
         lastScoreText.text = score.ToString();
         setHighScore();
 
+        Time.timeScale = 0f;
         gameOverUI.SetActive(true);
+        if (timerSound != null) timerSound.Stop();
     }
 
     void setHighScore()
