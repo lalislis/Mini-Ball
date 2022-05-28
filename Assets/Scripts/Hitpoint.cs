@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class BasketGoal : MonoBehaviour
+public class Hitpoint : MonoBehaviour
 {
     [SerializeField] TMP_Text scoreText;
     private int score = 0;

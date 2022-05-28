@@ -1051,9 +1051,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5458621810370503352}
-  - component: {fileID: 364993489014783600}
   - component: {fileID: 7837381653466975233}
   - component: {fileID: 2167620487247248436}
+  - component: {fileID: 4576137894243112082}
   m_Layer: 0
   m_Name: Hitpoint
   m_TagString: Goal
@@ -1075,19 +1075,6 @@ Transform:
   m_Father: {fileID: 5497297420385915478}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &364993489014783600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5458621810370503359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d640f50b9119fe949bee264a1af69b2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!65 &7837381653466975233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1113,7 +1100,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fa3c6a0815604bf41a73a20f5e69de0a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1197,6 +1184,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4576137894243112082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5458621810370503359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d640f50b9119fe949bee264a1af69b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!1 &5512926016080456512
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChildGameplay : MonoBehaviour
 {
@@ -12,8 +13,16 @@ public class ChildGameplay : MonoBehaviour
         }
 
         Transform parent = transform.parent;
-        CanballMechanic gameplay = parent.GetComponent<CanballMechanic>();
 
-        gameplay.CollisonDetected(collision);
+        if (SceneManager.GetActiveScene().name == "Basketball")
+        {
+            BasketballMechanic basketBall = parent.GetComponent<BasketballMechanic>();
+            basketBall.CollisionDetected(collision);
+            return;
+
+        }
+
+        CanballMechanic canBall = parent.GetComponent<CanballMechanic>();
+        canBall.CollisonDetected(collision);
     }
 }
