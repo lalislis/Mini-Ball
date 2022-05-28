@@ -9,6 +9,8 @@ TagManager:
   - Kaleng
   - Piramid
   - Destroy
+  - Border Atas
+  - Sphere
   layers:
   - Default
   - TransparentFX

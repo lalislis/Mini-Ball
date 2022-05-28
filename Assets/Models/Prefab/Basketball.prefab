@@ -79,7 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5aafeef9143b74987486d6c3f84187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 8205417687171830105}
   addForceXY: 5
   addForceZ: 250
   tinSound: {fileID: 0}
@@ -111,7 +110,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dafff54c9b8d8764ebac677e794a9c26, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

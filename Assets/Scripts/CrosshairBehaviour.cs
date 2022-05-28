@@ -23,13 +23,13 @@ public class CrosshairBehaviour : MonoBehaviour
 
     void Update()
     {
-        UpdatePlacementPose();
-        UpdatePlacementIndicator();
+        //UpdatePlacementPose();
+        //UpdatePlacementIndicator();
 
-        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            PlaceObject();
-        }
+        //if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        //{
+        //    PlaceObject();
+        //}
     }
 
     private void PlaceObject()

@@ -5,11 +5,9 @@ using UnityEngine;
 public class Throwball : MonoBehaviour
 {
     Vector2 mousePos, direction;
-    Vector3 ballPos;
     float timeStart, intervalTime;
     bool isThrowed = false;
 
-    [SerializeField] GameObject ball;
     [SerializeField] float addForceXY = 5f;
     [SerializeField] float addForceZ = 250f;
     [SerializeField] AudioSource tinSound;
@@ -22,15 +20,6 @@ public class Throwball : MonoBehaviour
         swipeSound = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
-        
-        ballPos = gameObject.transform.position;
-        transform.position = ballPos;
-    }
-
-    public IEnumerator SpawnBall()
-    {
-        yield return new WaitForSeconds(3);
-        Instantiate(ball, ballPos, Quaternion.identity);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -55,16 +44,13 @@ public class Throwball : MonoBehaviour
         direction = (Vector2)Input.mousePosition - mousePos;
 
         if (!isThrowable(direction.x, direction.y, intervalTime)) return;
-
         if (swipeSound != null) swipeSound.Play();
+
         isThrowed = true;
         rb.isKinematic = false;
-
-        Debug.Log(-direction.x + " " + -direction.y + " " + intervalTime);
         rb.AddForce(-direction.x * addForceXY, -direction.y * addForceXY, addForceZ / intervalTime);
 
-        StartCoroutine(SpawnBall());
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 4f);
     }
 
     private bool isThrowable(float x , float y, float time)
