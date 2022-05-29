@@ -23,13 +23,13 @@ public class CrosshairBehaviour : MonoBehaviour
 
     void Update()
     {
-        //UpdatePlacementPose();
-        //UpdatePlacementIndicator();
+        UpdatePlacementPose();
+        UpdatePlacementIndicator();
 
-        //if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        //{
-        //    PlaceObject();
-        //}
+        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+           PlaceObject();
+        }
     }
 
     private void PlaceObject()
@@ -62,7 +62,7 @@ public class CrosshairBehaviour : MonoBehaviour
             placementPose = hits[0].pose;
 
             var cameraForward = Camera.current.transform.forward;
-            var cameraBearing = new Vector3(cameraForward.x, cameraForward.y, cameraForward.z).normalized;
+            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
             placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
     }
