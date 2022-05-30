@@ -48,7 +48,7 @@ public class Throwball : MonoBehaviour
 
         isThrowed = true;
         rb.isKinematic = false;
-        rb.AddForce(-direction.x * addForceXY, -direction.y * addForceXY, addForceZ / intervalTime);
+        rb.AddForce(direction.x * addForceXY, direction.y * addForceXY, addForceZ / intervalTime);
 
         Destroy(gameObject, 4f);
     }
