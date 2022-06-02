@@ -55,6 +55,6 @@ public class Throwball : MonoBehaviour
 
     private bool isThrowable(float x , float y, float time)
     {
-        return (time != Mathf.Infinity && (x != 0 || x != 0));
+        return ((time != Mathf.Infinity && time != 0) && (x != 0 || x != 0));
     }
 }
