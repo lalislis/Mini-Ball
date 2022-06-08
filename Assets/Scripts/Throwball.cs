@@ -50,7 +50,7 @@ public class Throwball : MonoBehaviour
         rb.isKinematic = false;
         rb.AddForce(direction.x * addForceXY, direction.y * addForceXY, addForceZ / intervalTime);
 
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 7f);
     }
 
     private bool isThrowable(float x , float y, float time)
