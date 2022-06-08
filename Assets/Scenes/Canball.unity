@@ -5708,12 +5708,12 @@ PrefabInstance:
     - target: {fileID: 3150757129861144021, guid: 1c7fd92f90ce6f74ea86f6808ddfbfca,
         type: 3}
       propertyPath: addForceZ
-      value: 120
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 3150757129861144021, guid: 1c7fd92f90ce6f74ea86f6808ddfbfca,
         type: 3}
       propertyPath: addForceXY
-      value: 0.4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6820760429382523875, guid: 1c7fd92f90ce6f74ea86f6808ddfbfca,
         type: 3}

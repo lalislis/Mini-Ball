@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5aafeef9143b74987486d6c3f84187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addForceXY: 5
-  addForceZ: 250
+  addForceXY: 2
+  addForceZ: 1500
   tinSound: {fileID: 0}
 --- !u!82 &6820760429382523875
 AudioSource:
